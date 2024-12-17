@@ -39,20 +39,20 @@ export default function About() {
         setLoading(false);
       }
       if (text.content) {
-        const under = isAtBottom();
+        // const under = isAtBottom();
         setTextList((pre) => [
           ...pre,
           { content: text.content, context: text.context, time: text.time },
         ]);
         console.log(under);
-        if (under) setReceiveUserToBottom(!receiveUserToBottom);
+        // if (under) setReceiveUserToBottom(!receiveUserToBottom);
         console.log(textList);
       }
     };
   }, []);
 
   useEffect(() => {
-    toBottom();
+    // toBottom();
   }, [receiveUserToBottom]);
 
   const send = () => {
@@ -72,7 +72,7 @@ export default function About() {
         })
       );
     }
-    toBottom();
+    // toBottom();
     setText("");
   };
 

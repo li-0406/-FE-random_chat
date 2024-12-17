@@ -7,7 +7,7 @@ import {
 } from "@ant-design/icons";
 
 // const host = "ws://localhost:3000/ws";
-const host = "https://be-random-chat.onrender.com/ws"; //dev
+const host = "ws://be-random-chat.onrender.com/ws"; //dev
 
 export default function About() {
   const ws = useRef(null);
